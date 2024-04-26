@@ -77,6 +77,7 @@ public class JogoDaVelha {
         System.out.print("Informe a linha: ");
         p[0] = scan.nextInt();
         System.out.print("Informe a coluna: ");
+        p[1] = scan.nextInt();
         return p;
     }
 
@@ -98,7 +99,7 @@ public class JogoDaVelha {
     public static void iniciarJogo(Campo[][] Jogo){
         for (int i=0; i<3; i++) {
             for (int c=0; c<3; c++){
-                Jogo[1][c] = new Campo();
+                Jogo[i][c] = new Campo();
             }
         }
 
